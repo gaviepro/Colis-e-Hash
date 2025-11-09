@@ -61,7 +61,7 @@ On peut calculer l'espace mémoire qui sera utilisé en determinant le nombre de
 ## Usage typique
 
 ```bash
-python3 collision_prefix.py --target-prefix 12 --algo sha256 --max-samples 20000000 --workers 8 --sort-chunks 8
+python3 collision_birthday_attack.py --target-prefix 12 --algo sha256 --max-samples 20000000 --workers 8 --sort-chunks 8
 ```
 
 - `--target-prefix` : nombre de caractères hex à faire matcher
@@ -71,3 +71,4 @@ python3 collision_prefix.py --target-prefix 12 --algo sha256 --max-samples 20000
 - `--sort-chunks` : nombre de morceaux pour le tri parallèle
 
 Le programme affiche ensuite si une collision a été trouvée et écrit les deux messages correspondants dans un dossier du projet.
+
